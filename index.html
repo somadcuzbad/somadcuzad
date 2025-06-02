@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>※Somacuzbad※</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Jersey+15&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Jersey 15", serif;
+      color: #fff;
+      background-color: #000;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid #fff;
+    }
+
+    .logo {
+      font-size: 3rem;
+      font-family: 'Jersey 15', sans-serif;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      border: 2px solid #fff;
+      text-align: center;
+    }
+
+    section h2, section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    .accounts a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .accounts a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid #fff;
+    }
+
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .carousel-images {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-images img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    button.prev, button.next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      font-size: 2rem;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    button.prev { left: 10px; }
+    button.next { right: 10px; }
+
+    button.prev:hover, button.next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    .pfp-container {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .pfp-container img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid #fff;
+    }
+
+  </style>
+</head>
+<header>
+    <h1 class="logo">⋆˚࿔SOMADCUZBAD𝜗𝜚˚⋆</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <nav>
+      <a href="https://www.instagram.com/epilepticgutszz/">✮⋆˙Instagram౨ৎ</a> × 
+      <a href="https://www.youtube.com/@somadcuzbad">✮⋆˙YouTube౨ৎ</a> × 
+      <a href="https://www.roblox.com/users/1112436767/profile">✮⋆˙Roblox౨ৎ</a>
+    </nav>
+  </header>
+<body>
+
+  <main>
+    <div class="pfp-container">
+      <img src="https://media.discordapp.net/attachments/1185788777986273452/1327386287732293722/Untitled1159_20250111051839.png?ex=6782e050&is=67818ed0&hm=cd5530d235ecf33aa562a93c07b1e31a4f2305dee1e3da7f8f4e4b2331105114&=&format=webp&quality=lossless&width=593&height=593" alt="Profile Picture">
+    </div>
+
+    <section class="about" style="background-image: url('https://media.tenor.com/sQDz_xy06NMAAAAM/magic-stars.gif'); background-size: cover; background-position: center;">
+      <h3>About Me</h3>
+      <p>
+        Hi there! I'm Nerizza but my other nicknames i go by is Neri, Soma or Karoui. I'm 14 years old, and from the Philippines. My pronouns are she/her, My birthday is October 11 2010 and I'm bisexual.
+      </p>
+      <p>
+        From the outside world, I enjoy drawing on my tablet and paper (but i'm in serious art block rght now). I am also interested in being a lawyer, which my 2 main courses would be Legal Management and Political Science. I also have 1 brother and 2 sisters; 2 Older, 1 Younger. I may come off as stubborn as a bull, but that's just how i am (Being a libra is like this, i swear).
+      </p>
+      <p>
+        If you wanna chat, feel free to hit me up via Instagram or Discord (somadcuzbad). No matter if it's about myself or just the weather.
+      </p>
+    </section>
+
+    <section class="accounts" style="background-image: url('https://media.tenor.com/sQDz_xy06NMAAAAM/magic-stars.gif'); background-size: cover; background-position: center;">
+      <h2>My Accounts</h2>
+      <p>
+        <a href="https://x.com/epilepticgutzz">Twitter/X (INACTIVE!)</a> · 
+        <a href="https://www.instagram.com/epilepticgutszz/">Instagram</a> · 
+        <a href="https://www.youtube.com/@somadcuzbad">YouTube</a> · 
+        <a href="https://www.tiktok.com/@somadcuzbad4">Tiktok (INACTIVE!)</a>
+      </p>
+    </section>
+
+  <footer>
+    <p>© 2025 Somadcuzbad</p>
+  </footer>
+
+  <script>
+    const carouselImages = document.querySelector('.carousel-images');
+    const images = document.querySelectorAll('.carousel-images img');
+    let index = 0;
+
+    function updateCarousel() {
+      carouselImages.style.transform = `translateX(-${index * 100}%)`;
+    }
+  </script>
+</body>
+</html>
