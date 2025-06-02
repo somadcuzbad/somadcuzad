@@ -66,7 +66,17 @@
       padding: 20px;
       border-top: 2px solid #fff;
     }
-
+.stripe {
+      height: 20px;
+      background: repeating-linear-gradient(
+        45deg,
+        white,
+        white 10px,
+        black 10px,
+        black 20px
+      );
+      margin: 20px 0;
+    }
     .carousel-container {
       position: relative;
       width: 100%;
@@ -130,16 +140,16 @@
     </nav>
   </header>
 <body>
+    <div class="stripe"></div>
 
   <main>
     <div class="pfp-container">
       <img src="https://media.discordapp.net/attachments/1185788777986273452/1327386287732293722/Untitled1159_20250111051839.png?ex=6782e050&is=67818ed0&hm=cd5530d235ecf33aa562a93c07b1e31a4f2305dee1e3da7f8f4e4b2331105114&=&format=webp&quality=lossless&width=593&height=593" alt="Profile Picture">
     </div>
-
     <section class="about" style="background-image: url('https://media.tenor.com/sQDz_xy06NMAAAAM/magic-stars.gif'); background-size: cover; background-position: center;">
       <h3>About Me</h3>
       <p>
-        Hi there! I'm Nerizza but my other nicknames i go by is Neri, Soma or Karoui. I'm 14 years old, and from the Philippines. My pronouns are she/her, My birthday is October 11 2010 and I'm bisexual.
+        Hi there! I'm Neriza but my other nicknames i go by is Neri, Soma or Karoui. I'm 14 years old, and from the Philippines. My pronouns are she/her, My birthday is October 11 2010 and I'm bisexual.
       </p>
       <p>
         From the outside world, I enjoy drawing on my tablet and paper (but i'm in serious art block rght now). I am also interested in being a lawyer, which my 2 main courses would be Legal Management and Political Science. I also have 1 brother and 2 sisters; 2 Older, 1 Younger. I may come off as stubborn as a bull, but that's just how i am (Being a libra is like this, i swear).
@@ -172,5 +182,6 @@
       carouselImages.style.transform = `translateX(-${index * 100}%)`;
     }
   </script>
+        <div class="stripe"></div>
 </body>
 </html>
