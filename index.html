@@ -51,6 +51,31 @@
     ul li {
       margin: 10px 0;
     }
+.center-container{
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;   /* keep tops aligned */
+  gap:20px;                 /* space between the two cards */
+  flex-wrap:wrap;           /* stack on very narrow screens */
+}
+
+.about-box{
+  width:250px;
+  padding:15px;
+  border:2px solid #d9d9d9;
+  border-radius:10px;
+  background:#fff;
+  box-shadow:2px 2px 5px rgba(0,0,0,0.1);
+  font-family:'Comic Sans MS',cursive,sans-serif;
+  color:ghostwhite;
+}
+
+.about-box h3{
+  font-size:1.2em;
+  color:#c74e4e;
+  font-style:italic;
+}
+
 
     .accounts a {
       color: #fff;
@@ -66,7 +91,7 @@
       padding: 20px;
       border-top: 2px solid #fff;
     }
-.stripe {
+    .stripe {
       height: 20px;
       background: repeating-linear-gradient(
         45deg,
@@ -144,22 +169,62 @@
 
   <main>
     <div class="pfp-container">
-      <img src="https://i.pinimg.com/736x/94/3e/df/943edf74780001826d006e60455b8685.jpg" alt="Profile Picture">
+      <img src="https://i.pinimg.com/736x/98/4d/9d/984d9dad41f58e0737a7a422db3e6672.jpg" alt="Profile Picture">
     </div>
+
     <section class="about" style="background-image: url('https://media.tenor.com/sQDz_xy06NMAAAAM/magic-stars.gif'); background-size: cover; background-position: center;">
       <h3>About Me</h3>
       <p>
         Hi there! I'm Neriza but my other nicknames i go by is Neri, Soma or Karoui. I'm 14 years old, and from the Philippines. My pronouns are she/her, My birthday is October 11 2010 and I'm bisexual.
       </p>
       <p>
-        From the outside world, I enjoy drawing on my tablet and paper (but i'm in serious art block rght now). I am also interested in being a lawyer, which my 2 main courses would be Legal Management and Political Science. I also have 1 brother and 2 sisters; 2 Older, 1 Younger. I may come off as stubborn as a bull, but that's just how i am (Being a libra is like this, i swear).
+        From the outside world, I enjoy drawing on my tablet and paper (but i'm in serious art block rght now). I am also interested in being a lawyer, which my 2 main courses would be Legal Management and Political Science. I also have 1 brother and 2 sisters; 2 Older, 1 Younger. I may come off as stubborn as a bull, but that's just how i am (Being a libra is like this, i swear)
       </p>
+      <p> I might also come off extremely dry on apps like this, but it's because I am also busy in the outside world. I might yap alot of protest your answers, because I really enjoy trying to justify anything. I'm in a relationship too and i yap to her a lot about the most unexpecting things ever. </p>
       <p>
-        If you wanna chat, feel free to hit me up via Instagram or Discord (somadcuzbad). No matter if it's about myself or just the weather.
+        If you wanna chat, feel free to hit me up via Instagram or Discord (somadcuzbad). No matter if it's about myself, just the weather or you want to study with me.
       </p>
     </section>
+ <section class="about" style="background-image: url('https://media.tenor.com/sQDz_xy06NMAAAAM/magic-stars.gif'); background-size: cover; background-position: center;">
+  <h3> Do not Interact ↓</h3>
+  <h2> • Pedophiles </h2>
+  <h2> • Racists/Discriminators </h2>
+  <h2> • Proshippers </h2> 
+  <h2> • Children under 12 (Because i can talk about things they wouldn't understand) </h2>
+  <h2> • Perverts (the ones with the weird fetishes) </h2>
+  <p> Note: People can freely talk to me, I won't ask you to completely introduce yourself but rather explain your intentions to me. </p>
+</section>
+<div class="center-container">
+  <!-- Likes card -->
+  <div class="about-box"
+       style="background-image:url('https://media.tenor.com/sQDz_xy06NMAAAAM/magic-stars.gif');
+              background-size:cover;background-position:center;">
+    <h3>Likes</h3>
+    <h2>• Drawing</h2>
+    <h2>• Studying (about law, math and history)</h2>
+    <h2>• Writing (mostly essays)</h2>
+    <h2>• Badminton</h2>
+    <h2>• Collecting (Chiikawa, My Hero Academia or any other anime merchandise.)</h2>
+    <h2>• Playing Games in my Tablet or Computer (Roblox or MHA UR) </h2>
+    <h2>• Yapping (I can yap on discord or on voice chat.)</h2>
+  </div>
 
-    <section class="accounts" style="background-image: url('https://media.tenor.com/sQDz_xy06NMAAAAM/magic-stars.gif'); background-size: cover; background-position: center;">
+  <!-- Dislikes card -->
+  <div class="about-box"
+       style="background-image:url('https://media.tenor.com/sQDz_xy06NMAAAAM/magic-stars.gif');
+              background-size:cover;background-position:center;">
+    <h3>Dislikes</h3>
+    <h2>• Bullying (except my friends can do that)</h2>
+    <h2>• Stalkers</h2>
+    <h2>• Asking me for bad stuff (ex: anything perverted, violent or inhumane)</h2>
+    <h2>• Fandoms (Depending on what fandom you're in but i deny regretevator, forsakens [some of them], Dandy's World and Cookie Run Kingdom fans[both their behaviors can be immature or concerning])
+  </div>
+</div>
+
+
+
+
+     <section class="about" style="background-image: url('https://media.tenor.com/sQDz_xy06NMAAAAM/magic-stars.gif'); background-size: cover; background-position: center;">
       <h2>My Accounts</h2>
       <p>
         <a href="https://x.com/epilepticgutzz">Twitter/X (INACTIVE!)</a> · 
@@ -182,6 +247,8 @@
       carouselImages.style.transform = `translateX(-${index * 100}%)`;
     }
   </script>
-        <div class="stripe"></div>
+      <div class="stripe"></div>
+
 </body>
 </html>
+
